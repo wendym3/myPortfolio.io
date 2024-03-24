@@ -1,0 +1,91 @@
+*{
+margin: 0;
+padding: 0;
+ font-family: sans-serif;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://images.unsplash.com/photo-1599302592205-d7d683c83eea?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJvcGljYWwlMjBzdW5zZXR8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.content {
+width: 100%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+color: white;
+
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 25px auto;
+    font-weight: 100px;
+    line-height: 25px;
+}
+
+button{
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid lightcoral;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navbar ul li::after {
+    content: ;
+    height: 3px;
+    width: 0;
+    background:lightcoral ;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover ::after {
+    width: 100%;
+}
